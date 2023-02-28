@@ -1,0 +1,90 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.converter {
+    background: #e7c6ff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 16px 2px rgba(0, 0, 0, 0.2);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.converter>.title {
+    display: flex;
+    align-items: center;
+
+}
+
+.converter>.title svg {
+    width: 30px;
+    margin-right: 5px;
+    color: #0096c7;
+}
+
+
+.converter>.title>h1 {
+    font-size: 18px;
+    font-weight: 900;
+}
+
+#convertForm>div {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    color: #5390d9;
+}
+
+#convertForm>div>input,
+#convertForm>div>select {
+    border: 1px solid rgba(210, 207, 207);
+    padding: 12px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    box-shadow: 8px 3px 15px rgba(0, 0, 0, 0.1);
+    background: #ff8fa3;
+    color: #10451d;
+}
+
+
+#convertForm>button {
+    width: 100%;
+    background: #40916c;
+    color: #480ca8;
+    border: none;
+    padding: 10px;
+    margin: 6px 0;
+    cursor: pointer;
+}
+
+
+
+
+#convertResult {
+    width: 100%;
+    margin: 20px 0;
+    font-weight: 900;
+}
+
+#convertResult.error {
+    color: red;
+    padding: 20px;
+}
